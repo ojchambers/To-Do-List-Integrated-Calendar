@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Motivational To-Do List</h1>
+
+        <!-- Task Input Section -->
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <input type="datetime-local" id="task-date" />
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <!-- Task Type Selector -->
+        <div class="task-type">
+            <label><input type="radio" name="task-type" value="non-recurring" checked> Non-Recurring</label>
+            <label><input type="radio" name="task-type" value="daily"> Daily</label>
+            <label><input type="radio" name="task-type" value="weekly"> Weekly</label>
+            <label><input type="radio" name="task-type" value="monthly"> Monthly</label>
+        </div>
+
+        <!-- Task Lists -->
+        <h3>Non-Recurring Tasks</h3>
+        <ul id="non-recurring-tasks"></ul>
+
+        <h3>Daily Tasks</h3>
+        <ul id="daily-tasks"></ul>
+
+        <h3>Weekly Tasks</h3>
+        <ul id="weekly-tasks"></ul>
+
+        <h3>Monthly Tasks</h3>
+        <ul id="monthly-tasks"></ul>
+
+        <h3>Completed Tasks</h3>
+        <ul id="completed-task-list"></ul>
+        
+<h3 id="tasks-completed-today">Number of Tasks Completed Today: 0</h3>
+<button id="reset-today-completed">Reset Today's Completed Tasks</button>
+
+<h3 id="tasks-completed-total">Number of Tasks Completed Total: 0</h3>
+<button id="reset-total-completed">Reset Total Completed Tasks</button>
+                        <ul id="completed-task-list"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
